@@ -6,7 +6,7 @@ const UserListPage = ({ userList }) => {
     <div>
       <h2>User List</h2>
       <ul>
-        {userList.map((user, index) => (
+        {userList?.map((user, index) => (
           <li key={index}>
             <strong>Name:</strong> {user.name}, <strong>Username:</strong>{" "}
             {user.username}, <strong>Email:</strong> {user.email}
